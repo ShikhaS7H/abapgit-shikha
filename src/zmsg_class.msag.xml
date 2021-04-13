@@ -30,7 +30,7 @@
      <SPRSL>E</SPRSL>
      <ARBGB>ZMSG_CLASS</ARBGB>
      <MSGNR>003</MSGNR>
-     <TEXT>Country field should be valorized first</TEXT>
+     <TEXT>Country</TEXT>
     </T100>
     <T100>
      <SPRSL>E</SPRSL>
@@ -48,6 +48,13 @@
      <SPRSL>E</SPRSL>
      <ARBGB>ZMSG_CLASS</ARBGB>
      <MSGNR>006</MSGNR>
+     <TEXT>Changes object in testing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG_CLASS</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Change</TEXT>
     </T100>
    </T100>
   </asx:values>
