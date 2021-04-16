@@ -365,6 +365,53 @@
                    <sf:OBJ>
                     <sf:TEXT>
                      <NAME>
+                      <INAME>%TEXT3</INAME>
+                     </NAME>
+                     <CAPTION>New Text 3</CAPTION>
+                     <APPMODE>P</APPMODE>
+                     <TEXT>
+                      <item>
+                       <TDFORMAT>*</TDFORMAT>
+                       <TDLINE> Test After Commit : this is what we changed.</TDLINE>
+                      </item>
+                     </TEXT>
+                     <STYLE_NAME>SYSTEM</STYLE_NAME>
+                     <TEXT_AREA>
+                      <ENABLED>F</ENABLED>
+                      <NCOLS>0</NCOLS>
+                      <NROWS>0</NROWS>
+                     </TEXT_AREA>
+                     <T_CAPTION>
+                      <item>
+                       <LANGU>E</LANGU>
+                       <FORMNAME>ZSMART_SHI</FORMNAME>
+                       <OBJTYPE>TI</OBJTYPE>
+                       <INAME>%TEXT3</INAME>
+                       <CAPTION>New Text 3</CAPTION>
+                      </item>
+                     </T_CAPTION>
+                     <T_TEXT>
+                      <item>
+                       <SPRAS>E</SPRAS>
+                       <TXTYPE>F</TXTYPE>
+                       <FORMNAME>ZSMART_SHI</FORMNAME>
+                       <INAME>%TEXT3</INAME>
+                       <LINENR>000001</LINENR>
+                       <TDFORMAT>*</TDFORMAT>
+                       <TDLINE> Test After Commit : this is what we changed.</TDLINE>
+                      </item>
+                     </T_TEXT>
+                    </sf:TEXT>
+                   </sf:OBJ>
+                   <sf:SUCC/>
+                  </sf:NODE>
+                 </sf:item>
+                 <sf:item>
+                  <sf:NODE>
+                   <NODETYPE>TI</NODETYPE>
+                   <sf:OBJ>
+                    <sf:TEXT>
+                     <NAME>
                       <INAME>%TEXT2</INAME>
                      </NAME>
                      <CAPTION>New Text 2</CAPTION>
