@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V8.2.3.4195.1.572397_SAP" APIVersion="2.9.9195.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-03-21T09:31:00Z" uuid="1bfb746a-48a6-4dcb-a983-22d5679b7485">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.6/">
+   <?formServer defaultPDFRenderFormat acrobat8.1static?>
+   <subform layout="tb" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="219.075mm" w="203.2mm" x="6.35mm" y="57.15mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <field access="readOnly" h="9mm" name="DATE" w="43.108mm" x="136.525mm" y="6.35mm">
+               <ui>
+                  <dateTimeEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                        <?templateDesigner StyleID aped3?></border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <date/>
+               </value>
+               <bind match="dataRef" ref="$.FOLDER.DATE">
+                  <picture>date{YYYY-MM-DD}</picture>
+               </bind>
+               <desc>
+                  <text name="Schema Annotation">System Date</text>
+               </desc>
+               <assist>
+                  <toolTip xliff:rid="91A58BA2-441D-409E-9C0A-85F803D2055E">Test</toolTip>
+               </assist>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="8.625in" w="8in">
+         <field access="readOnly" h="9mm" name="FKART" w="62mm" x="92.075mm" y="15.875mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="25mm">
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text xliff:rid="A2297B21-B1EC-47D1-829F-7652F3870580">BillT</text>
+               </value>
+            </caption>
+            <value>
+               <text maxChars="4"/>
+            </value>
+            <bind match="dataRef" ref="$.LS_VBRK.FKART"/>
+            <desc>
+               <text name="Schema Annotation">Billing Type</text>
+            </desc>
+            <event activity="ready" name="event__layout_ready" ref="$layout">
+               <script contentType="application/x-javascript">
+if(FKART.rawValue == "123"){
+DropDownList1.presence = "hidden";}
+else {
+DropDownList1.presence = "visible";
+}
+
+
+
+
+</script>
+            </event>
+         </field>
+         <subform minH="31.225mm" w="62mm" x="12.7mm" y="15.875mm">
+            <bind match="none"/>
+            <keep intact="none"/>
+            <field access="readOnly" h="9mm" name="VBELN" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <?templateDesigner StyleID aped3?>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <font typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="B3D35E2F-7649-47A8-A485-8E0BE2317DF8">Bill.Doc.</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="10"/>
+               </value>
+               <bind match="dataRef" ref="$.LS_VBRK.VBELN"/>
+               <desc>
+                  <text name="Schema Annotation">Billing Document</text>
+               </desc>
+            </field>
+            <field access="readOnly" h="9mm" name="FKTYP" w="62mm" y="22.225mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <?templateDesigner StyleID aped3?>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <font typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="E0600F35-A153-4C92-9438-9C9ECA8996C9">BlCat</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="1"/>
+               </value>
+               <bind match="dataRef" ref="$.LS_VBRK.FKTYP"/>
+               <desc>
+                  <text name="Schema Annotation">Billing Category</text>
+               </desc>
+            </field>
+            <border>
+               <edge/>
+               <corner thickness="0.175mm"/>
+            </border>
+            <?templateDesigner expand 1?></subform>
+         <field h="9mm" name="LAND1" w="62mm" x="92.075mm" y="38.1mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="25mm">
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text xliff:rid="75E627E2-CFF8-4E9A-82B3-9F4E0A645184">DstC</text>
+               </value>
+            </caption>
+            <bind match="dataRef" ref="$.LS_VBRK.LAND1"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <desc>
+               <text name="Schema Annotation">Country of Destination</text>
+            </desc>
+         </field>
+         <draw h="0in" name="Line1" w="155.763mm" x="9.446mm" y="53.99mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <field h="9mm" name="DropDownList1" w="62mm" x="139.7mm" y="3.175mm">
+            <ui>
+               <choiceList>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </choiceList>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="25mm">
+               <font typeface="Arial"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text xliff:rid="8695B476-97EF-4263-8D44-20F799DADC4A">Drop-down List</text>
+               </value>
+            </caption>
+            <bind match="none"/>
+            <bindItems labelRef="abc" ref="$record.test_1" valueRef="abc_123"/>
+            <items save="1">
+               <text xliff:rid="B68DFF2B-9139-422E-B602-201BE25F67D0">test_123</text>
+               <text xliff:rid="A092344F-0F4F-4FD1-AA8B-7E2C029ACAB1">test_456</text>
+               <text xliff:rid="9411AAAD-840A-4B5D-BF3B-B505307D3D62">test_789</text>
+            </items>
+         </field>
+         <field access="readOnly" h="13.594mm" name="Code128BarCode1" w="36.844mm" x="146.05mm" y="60.325mm">
+            <ui>
+               <barcode dataLength="10" textLocation="belowEmbedded" type="code128" wideNarrowRatio="fixed"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <value>
+               <text xliff:rid="D5437405-70D1-456E-ADE2-CF11A7E49062">1111111111</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field access="readOnly" h="25.4mm" name="QRCodeBarcode1" w="25.4mm" x="120.65mm" y="60.325mm">
+            <ui>
+               <barcode dataLength="10" errorCorrectionLevel="1" moduleHeight="0.0167in" moduleWidth="0.0167in" type="QRCode"/>
+            </ui>
+            <value>
+               <text xliff:rid="66703C94-918D-4B85-BFA7-D2DB0AD9FC45">Snigdhodeb</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field h="6mm" name="CheckBox1" w="28mm" x="161.925mm" y="19.05mm">
+            <ui>
+               <checkButton>
+                  <border>
+                     <?templateDesigner StyleID apcb2?>
+                     <edge stroke="lowered"/>
+                     <fill/>
+                  </border>
+               </checkButton>
+            </ui>
+            <font typeface="Arial"/>
+            <margin leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <integer>0</integer>
+            </value>
+            <caption placement="right" reserve="21mm">
+               <para vAlign="middle"/>
+               <font typeface="Arial"/>
+               <value>
+                  <text xliff:rid="D8BA2630-6518-43D0-8653-BC2250D75A80">Test_Check</text>
+               </value>
+            </caption>
+            <items>
+               <integer>1</integer>
+               <integer>0</integer>
+               <integer>2</integer>
+            </items>
+            <bind match="none"/>
+         </field>
+         <exclGroup name="RadioButtonList" x="161.925mm" y="28.575mm">
+            <?templateDesigner itemValuesSpecified 1?>
+            <field h="6mm" w="28mm" x="0mm" y="0mm">
+               <ui>
+                  <checkButton shape="round">
+                     <border>
+                        <?templateDesigner StyleID apcb4?>
+                        <edge stroke="lowered"/>
+                        <fill/>
+                     </border>
+                  </checkButton>
+               </ui>
+               <font typeface="Arial"/>
+               <margin leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption placement="right" reserve="22mm">
+                  <para vAlign="middle"/>
+                  <font typeface="Arial"/>
+                  <value>
+                     <text xliff:rid="D77A1021-31A5-4F8E-AE34-D2564D902A1E">Radio Button</text>
+                  </value>
+               </caption>
+               <items>
+                  <integer>1</integer>
+               </items>
+               <bind match="none"/>
+            </field>
+            <bind match="none"/>
+            <field h="6mm" w="28mm" y="6.35mm">
+               <ui>
+                  <checkButton shape="round">
+                     <border>
+                        <?templateDesigner StyleID apcb4?>
+                        <edge stroke="lowered"/>
+                        <fill/>
+                     </border>
+                  </checkButton>
+               </ui>
+               <font typeface="Arial"/>
+               <margin leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption placement="right" reserve="22mm">
+                  <para vAlign="middle"/>
+                  <font typeface="Arial"/>
+                  <value>
+                     <text xliff:rid="F0577207-8AE3-46F4-ADF3-F3DE8A30DA00">Radio Button</text>
+                  </value>
+               </caption>
+               <items>
+                  <integer>2</integer>
+               </items>
+               <bind match="none"/>
+            </field>
+            <?templateDesigner expand 1?></exclGroup>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">8.2.3.4195.1.572397.541997</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 104 26 000300100011002500260027002F0035003700420044004600470048004B004C004E004F0051005200530055005600570058005A -.BCDLRT_acdehiklnoprstuw?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 4 1 00141?></subform>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 26?>
+   <?templateDesigner Zoom 75?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.6/">
+   <agent name="designer">
+      <common>
+         <template>
+            <base>http://AAESAWS0189.aaes.accenture.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>1</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <?originalXFAVersion http://www.xfa.org/schema/xci/2.8/?></config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.4/">
+   <xsdConnection dataDescription="data" name="ZFORM_123">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <LS_VBRK>
+            <MANDT/>
+            <VBELN/>
+            <FKART/>
+            <FKTYP/>
+            <VBTYP/>
+            <WAERK/>
+            <VKORG/>
+            <VTWEG/>
+            <KALSM/>
+            <KNUMV/>
+            <VSBED/>
+            <FKDAT/>
+            <BELNR/>
+            <GJAHR/>
+            <POPER/>
+            <KONDA/>
+            <KDGRP/>
+            <BZIRK/>
+            <PLTYP/>
+            <INCO1/>
+            <INCO2/>
+            <RFBSK/>
+            <MRNKZ/>
+            <KURRF/>
+            <CPKUR/>
+            <VALTG/>
+            <VALDT/>
+            <ZTERM/>
+            <ZLSCH/>
+            <KTGRD/>
+            <LAND1/>
+            <REGIO/>
+            <COUNC/>
+            <CITYC/>
+            <BUKRS/>
+            <TAXK1/>
+            <TAXK2/>
+            <TAXK3/>
+            <TAXK4/>
+            <TAXK5/>
+            <TAXK6/>
+            <TAXK7/>
+            <TAXK8/>
+            <TAXK9/>
+            <NETWR/>
+            <ZUKRI/>
+            <ERNAM/>
+            <ERZET/>
+            <ERDAT/>
+            <STAFO/>
+            <KUNRG/>
+            <KUNAG/>
+            <MABER/>
+            <STWAE/>
+            <STCEG/>
+            <AEDAT/>
+            <SFAKN/>
+            <KNUMA/>
+            <FKART_RL/>
+            <FKDAT_RL/>
+            <KURST/>
+            <MSCHL/>
+            <MANSP/>
+            <SPART/>
+            <KKBER/>
+            <KNKLI/>
+            <CMWAE/>
+            <CMKUF/>
+            <HITYP_PR/>
+            <BSTNK_VF/>
+            <VBUND/>
+            <FKART_AB/>
+            <KAPPL/>
+            <LANDTX/>
+            <STCEG_H/>
+            <STCEG_L/>
+            <XBLNR/>
+            <ZUONR/>
+            <MWSBK/>
+            <LOGSYS/>
+            <FKSTO/>
+            <XEGDR/>
+            <RPLNR/>
+            <J_1AFITP/>
+            <KURRF_DAT/>
+            <KIDNO/>
+            <BVTYP/>
+            <NUMPG/>
+            <BUPLA/>
+            <VKONT/>
+            <FKK_DOCSTAT/>
+            <NRZAS/>
+            <SPE_BILLING_IND/>
+            <VTREF/>
+            <FK_SOURCE_SYS/>
+            <FKTYP_CRM/>
+            <STGRD/>
+            <CHANGED_ON/>
+            <EXPKZ/>
+            <EXNUM/>
+            <AKWAE/>
+            <AKKUR/>
+            <LCNUM/>
+         </LS_VBRK>
+         <ZTEST_TEXT/>
+         <LT_MARA dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <MATNR/>
+               <ERSDA/>
+               <ERNAM/>
+               <LAEDA/>
+               <AENAM/>
+               <VPSTA/>
+            </DATA>
+         </LT_MARA>
+         <FOLDER>
+            <DATE/>
+            <TIME/>
+         </FOLDER>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.6/"/>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.337767, 2008/04/13-15:41:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2018-03-21T09:31Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 8.2</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 8.2</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:1bfb746a-48a6-4dcb-a983-22d5679b7485</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>8.2.3.4195.1.572397.541997</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
