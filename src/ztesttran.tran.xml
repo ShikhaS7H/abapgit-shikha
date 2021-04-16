@@ -4,7 +4,7 @@
   <asx:values>
    <TSTC>
     <TCODE>ZTESTTRAN</TCODE>
-    <PGMNA>ZTEST_TRAN</PGMNA>
+    <PGMNA>ZTEST_TRAN1</PGMNA>
     <DYPNO>1000</DYPNO>
     <CINFO>gA==</CINFO>
    </TSTC>

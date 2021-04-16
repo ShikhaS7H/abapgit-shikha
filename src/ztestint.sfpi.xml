@@ -50,6 +50,16 @@
     <CL_FP_PARAMETERS classVersion="1">
      <IMPORT_PARAMETERS>
       <SFPIOPAR>
+       <NAME>LV_TEST2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR32</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
        <NAME>LV_TEST</NAME>
        <TYPING>TYPE</TYPING>
        <TYPENAME>CHAR10</TYPENAME>
