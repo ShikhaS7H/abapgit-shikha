@@ -8,6 +8,7 @@
    <LANGVECTOR>*</LANGVECTOR>
    <DEVCLASS></DEVCLASS>
    <VERSION>00001</VERSION>
+   <STATUS>I</STATUS>
    <FIRSTUSER>DUMMY</FIRSTUSER>
    <FIRSTDATE>2021-04-13</FIRSTDATE>
    <FIRSTTIME>14:28:21</FIRSTTIME>
@@ -372,7 +373,7 @@
                      <TEXT>
                       <item>
                        <TDFORMAT>*</TDFORMAT>
-                       <TDLINE> Test After Commit : this is what we changed.</TDLINE>
+                       <TDLINE> Test After Commit: This is what we changed.</TDLINE>
                       </item>
                      </TEXT>
                      <STYLE_NAME>SYSTEM</STYLE_NAME>
@@ -398,7 +399,7 @@
                        <INAME>%TEXT3</INAME>
                        <LINENR>000001</LINENR>
                        <TDFORMAT>*</TDFORMAT>
-                       <TDLINE> Test After Commit : this is what we changed.</TDLINE>
+                       <TDLINE> Test After Commit: This is what we changed.</TDLINE>
                       </item>
                      </T_TEXT>
                     </sf:TEXT>
